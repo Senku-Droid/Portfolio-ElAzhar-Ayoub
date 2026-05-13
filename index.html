@@ -1,160 +1,259 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <!-- Configuration de base de la page -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Ayoub El Azhar</title>
+
+    <!-- Librairie d'icones (Phosphor) pour les logos et pictogrammes -->
     <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <!-- Police Google Fonts utilisee sur tout le site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header Section -->
-    <section>
-      <img src="img/profile.jpg" alt="Profile Picture" class="profile-pic" />
-      <nav>
-        <ul>
-          <li><a href="#acceuil">Acceuil</a></li>
-          <li><a href="#mes-projets">Mes Projets</a></li>
-          <li><a href="#a-propos-de-moi">À Propos de Moi</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </section>
+    <!-- Conteneur global: sert de cadre principal pour toute la page -->
+    <div class="page-wrap">
+      <!-- En-tete: logo + menu de navigation -->
+      <header id="accueil" class="top-header container">
+        <!-- Logo cliquable pour remonter en haut de page -->
+        <a href="#accueil" class="logo" aria-label="Aller en haut">
+          <i class="ph-bold ph-code"></i>
+        </a>
 
-    <!-- Hero Section -->
-    <section>
-      <div>
-        <p>Hello!</p>
-        <h1 class="">
-          Moi c'est Ayoub, et je cherche un stage en développement front end
-        </h1>
-        <div>
-          <a href="#contact">Contactez-moi</a>
-          <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
-          <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
-          <a href="#"><i class="ph-fill ph-github-logo"></i></a>
+        <!-- Navigation interne avec ancres vers les sections -->
+        <nav>
+          <ul class="menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#projets">Mes projets</a></li>
+            <li><a href="#qualites">Mes qualités</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Contenu principal du portfolio -->
+      <main>
+        <!-- Section Hero: presentation rapide de mon profil -->
+        <section class="hero container">
+          <!-- Partie texte de gauche -->
+          <div class="hero-text">
+            <p class="hello">Hello !</p>
+            <h1>
+              Moi c'est Ayoub,<br />
+              et je cherche un stage<br />
+              en développement front end
+            </h1>
+
+            <!-- Bouton principal + liens sociaux -->
+            <div class="hero-actions">
+              <a href="#contact" class="cta">Contactez moi !</a>
+              <a href="#" class="social-circle" aria-label="Facebook">
+                <i class="ph-fill ph-facebook-logo"></i>
+              </a>
+              <a href="#" class="social-circle" aria-label="Instagram">
+                <i class="ph-fill ph-instagram-logo"></i>
+              </a>
+              <a href="#" class="social-circle" aria-label="LinkedIn">
+                <i class="ph-fill ph-linkedin-logo"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Illustration decoractive de droite (fenetre de code) -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="code-window">
+              <!-- Petits points decoratifs en haut de la fenetre -->
+              <span class="dots"></span>
+              <i class="ph-bold ph-code"></i>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Projets: grille de cartes -->
+        <section id="projets" class="projects container">
+          <h2>Mes projets</h2>
+
+          <!-- Grille responsive: 2 colonnes desktop, 1 colonne mobile -->
+          <div class="project-grid">
+            <!-- Carte projet 1 -->
+            <article class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80"
+                alt="Maquette de site"
+              />
+              <div class="project-info">
+                <h3>Nom du projet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <span>#Webdev</span>
+              </div>
+            </article>
+
+            <!-- Carte projet 2 -->
+            <article class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80"
+                alt="Wireframe de projet"
+              />
+              <div class="project-info">
+                <h3>Nom du projet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <span>#Webdev</span>
+              </div>
+            </article>
+
+            <!-- Carte projet 3 -->
+            <article class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=80"
+                alt="Interface web"
+              />
+              <div class="project-info">
+                <h3>Nom du projet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <span>#Webdev</span>
+              </div>
+            </article>
+
+            <!-- Carte projet 4 -->
+            <article class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=900&q=80"
+                alt="Code sur ordinateur"
+              />
+              <div class="project-info">
+                <h3>Nom du projet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <span>#Webdev</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Section Qualites: cartes courtes avec icones -->
+        <section id="qualites" class="qualities">
+          <div class="container">
+            <h2>Mes qualités</h2>
+
+            <!-- Liste des qualites personnelles -->
+            <div class="quality-list">
+              <!-- Qualite 1 -->
+              <article class="quality-card">
+                <div class="icon">
+                  <i class="ph-fill ph-person-simple-run"></i>
+                </div>
+                <p>Dynamique !</p>
+              </article>
+
+              <!-- Qualite 2 -->
+              <article class="quality-card">
+                <div class="icon"><i class="ph-fill ph-heart"></i></div>
+                <p>Passionné</p>
+              </article>
+
+              <!-- Qualite 3 -->
+              <article class="quality-card">
+                <div class="icon"><i class="ph-fill ph-rocket-launch"></i></div>
+                <p>Motivée</p>
+              </article>
+
+              <!-- Qualite 4 -->
+              <article class="quality-card">
+                <div class="icon"><i class="ph-fill ph-handshake"></i></div>
+                <p>À l'écoute</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Parcours: frise simple par annees -->
+        <section class="journey container">
+          <h2>Mon parcours</h2>
+
+          <!-- 4 colonnes sur grand ecran (une par annee) -->
+          <div class="timeline">
+            <!-- Colonne 2024 -->
+            <article>
+              <h3>2024</h3>
+              <h4>Intitulé</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                doloribus explicabo odio, at labore.
+              </p>
+            </article>
+
+            <!-- Colonne 2023 -->
+            <article>
+              <h3>2023</h3>
+              <h4>Intitulé</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                laboriosam dicta maiores.
+              </p>
+              <h4>Intitulé</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                deserunt magni aliquam.
+              </p>
+            </article>
+
+            <!-- Colonne 2022 -->
+            <article>
+              <h3>2022</h3>
+              <h4>Intitulé</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                exercitationem tempora.
+              </p>
+            </article>
+
+            <!-- Colonne 2021 -->
+            <article>
+              <h3>2021</h3>
+              <h4>Intitulé</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
+                suscipit tempore repudiandae.
+              </p>
+              <h4>Intitulé</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
+                quia assumenda!
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <!-- Pied de page: logo + email + reseaux -->
+      <footer id="contact" class="site-footer container">
+        <a href="#accueil" class="logo" aria-label="Aller en haut">
+          <i class="ph-bold ph-code"></i>
+        </a>
+
+        <!-- Adresse email de contact -->
+        <a class="mail" href="mailto:mail@gmail.com">mail@gmail.com</a>
+
+        <!-- Liens sociaux -->
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"
+            ><i class="ph-fill ph-facebook-logo"></i
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="ph-fill ph-instagram-logo"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="ph-fill ph-linkedin-logo"></i
+          ></a>
         </div>
-      </div>
-
-      <img src="img/hero-image.jpg" alt="Hero Image" />
-    </section>
-
-    <!-- Projects Section -->
-    <section>
-      <h2>Mes Projets</h2>
-      <div>
-        <div>
-          <img src="img/project1.jpg" alt="Project 1" />
-          <h3>Projet 1</h3>
-          <p>Description du projet 1.</p>
-        </div>
-
-        <div>
-          <img src="img/project2.jpg" alt="Project 2" />
-          <h3>Projet 2</h3>
-          <p>Description du projet 2.</p>
-        </div>
-
-        <div>
-          <img src="img/project3.jpg" alt="Project 3" />
-          <h3>Projet 3</h3>
-          <p>Description du projet 3.</p>
-        </div>
-
-        <div>
-          <img src="img/project4.jpg" alt="Project 4" />
-          <h3>Projet 4</h3>
-          <p>Description du projet 4.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quality Section -->
-    <section>
-      <div>
-        <a href=""><i class="ph-fill ph-alien"></i></a>
-        <p>Dynamique</p>
-      </div>
-      <div>
-        <a href=""><i class="ph-fill ph-heart"></i></a>
-        <p>Passionné</p>
-      </div>
-      <div>
-        <a href=""><i class="ph-fill ph-brain"></i></a>
-        <p>Autonome</p>
-      </div>
-      <div>
-        <a href=""><i class="ph-fill ph-gear"></i></a>
-        <p>Travailleur</p>
-      </div>
-    </section>
-
-    <!-- Parcours Section -->
-    <section>
-      <h2>Mon Parcours</h2>
-      <div>
-        <h3>2024</h3>
-        <p>Intitulé</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          temporibus ut incidunt amet autem eum reprehenderit voluptate neque
-          vero voluptas error inventore sapiente officia expedita sed earum
-          eligendi, natus facilis?
-        </p>
-      </div>
-      <div>
-        <h3>2023</h3>
-        <p>Intitulé</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          temporibus ut incidunt amet autem eum reprehenderit voluptate neque
-          vero voluptas error inventore sapiente officia expedita sed earum
-          eligendi, natus facilis?
-        </p>
-        <p>Intitulé</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          qui ad officiis cupiditate quo voluptatem veniam, commodi, similique
-          dolorum nemo esse officia fuga recusandae odit facere dolores dolore
-          porro ipsa.
-        </p>
-      </div>
-      <div>
-        <h3>2022</h3>
-        <p>Intitulé</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          temporibus ut incidunt amet autem eum reprehenderit voluptate neque
-          vero voluptas error inventore sapiente officia expedita sed earum
-          eligendi, natus facilis?
-        </p>
-      </div>
-      <div>
-        <h3>2021</h3>
-        <p>Intitulé</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          temporibus ut incidunt amet autem eum reprehenderit voluptate neque
-          vero voluptas error inventore sapiente officia expedita sed earum
-          eligendi, natus facilis?
-        </p>
-        <p>Intitulé</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          qui ad officiis cupiditate quo voluptatem veniam, commodi, similique
-          dolorum nemo esse officia fuga recusandae odit facere dolores dolore
-          porro ipsa.
-        </p>
-      </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <img src="" alt="" />
-      <a href="mailto:example@example.com">example@example.com</a>
-      <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
-      <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
-      <a href="#"><i class="ph-fill ph-github-logo"></i></a>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
