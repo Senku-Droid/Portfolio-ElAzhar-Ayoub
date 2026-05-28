@@ -9,11 +9,11 @@
     <!-- Librairie d'icones (Phosphor) pour les logos et pictogrammes -->
     <script src="https://unpkg.com/phosphor-icons"></script>
 
-    <!-- Police Google Fonts utilisee sur tout le site -->
+    <!-- Polices Google Fonts utilisees sur le site -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -45,24 +45,28 @@
         <section class="hero container">
           <!-- Partie texte de gauche -->
           <div class="hero-text">
-            <p class="hello">Hello !</p>
+            <p class="hello">Salut, moi c'est Ayoub</p>
             <h1>
-              Moi c'est Ayoub,<br />
-              et je cherche un stage<br />
-              en développement front end
+              Futur développeur<br />
+              front-end, prêt à coder<br />
+              des interfaces propres
             </h1>
+            <p class="lead">
+              Je cherche un stage pour progresser en HTML, CSS et JavaScript,
+              avec une vraie logique de dev et des projets utiles.
+            </p>
 
             <!-- Bouton principal + liens sociaux -->
             <div class="hero-actions">
-              <a href="#contact" class="cta">Contactez moi !</a>
-              <a href="#" class="social-circle" aria-label="Facebook">
-                <i class="ph-fill ph-facebook-logo"></i>
-              </a>
-              <a href="#" class="social-circle" aria-label="Instagram">
-                <i class="ph-fill ph-instagram-logo"></i>
+              <a href="#projets" class="cta">Voir mes projets</a>
+              <a href="#" class="social-circle" aria-label="GitHub">
+                <i class="ph-fill ph-github-logo"></i>
               </a>
               <a href="#" class="social-circle" aria-label="LinkedIn">
                 <i class="ph-fill ph-linkedin-logo"></i>
+              </a>
+              <a href="#contact" class="social-circle" aria-label="Email">
+                <i class="ph-fill ph-envelope-simple"></i>
               </a>
             </div>
           </div>
@@ -70,9 +74,19 @@
           <!-- Illustration decoractive de droite (fenetre de code) -->
           <div class="hero-visual" aria-hidden="true">
             <div class="code-window">
-              <!-- Petits points decoratifs en haut de la fenetre -->
-              <span class="dots"></span>
-              <i class="ph-bold ph-code"></i>
+              <div class="terminal-top">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <p>portfolio-ayoub</p>
+              </div>
+              <div class="terminal-body">
+                <p><span>$</span> npm run build-profile</p>
+                <p>✔ motivation.js chargé</p>
+                <p>✔ creativity.css chargé</p>
+                <p>✔ teamwork.ts compilé</p>
+                <p class="ok">Stage mode: READY</p>
+              </div>
             </div>
           </div>
         </section>
@@ -90,9 +104,9 @@
                 alt="Maquette de site"
               />
               <div class="project-info">
-                <h3>Nom du projet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <span>#Webdev</span>
+                <h3>Landing page restaurant</h3>
+                <p>Site vitrine responsive avec menu, réservation et design moderne.</p>
+                <span>#HTML #CSS</span>
               </div>
             </section>
 
@@ -103,9 +117,9 @@
                 alt="Wireframe de projet"
               />
               <div class="project-info">
-                <h3>Nom du projet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <span>#Webdev</span>
+                <h3>Dashboard étudiant</h3>
+                <p>Interface simple pour suivre les notes, deadlines et tâches.</p>
+                <span>#UI #JavaScript</span>
               </div>
             </section>
 
@@ -116,9 +130,9 @@
                 alt="Interface web"
               />
               <div class="project-info">
-                <h3>Nom du projet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <span>#Webdev</span>
+                <h3>Clone portfolio créatif</h3>
+                <p>Travail sur la mise en page, les animations et la hiérarchie visuelle.</p>
+                <span>#Frontend</span>
               </div>
             </section>
 
@@ -129,9 +143,9 @@
                 alt="Code sur ordinateur"
               />
               <div class="project-info">
-                <h3>Nom du projet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <span>#Webdev</span>
+                <h3>Mini app Todo</h3>
+                <p>Ajout, suppression et filtrage de tâches avec stockage local.</p>
+                <span>#JavaScript #DOM</span>
               </div>
             </section>
           </div>
@@ -149,7 +163,7 @@
                 <div class="icon">
                   <i class="ph-fill ph-person-simple-run"></i>
                 </div>
-                <p>Dynamique !</p>
+                <p>Dynamique</p>
               </section>
 
               <!-- Qualite 2 -->
@@ -161,7 +175,7 @@
               <!-- Qualite 3 -->
               <section class="quality-card">
                 <div class="icon"><i class="ph-fill ph-rocket-launch"></i></div>
-                <p>Motivée</p>
+                <p>Curieux</p>
               </section>
 
               <!-- Qualite 4 -->
@@ -182,50 +196,50 @@
             <!-- Colonne 2024 -->
             <section>
               <h3>2024</h3>
-              <h4>Intitulé</h4>
+              <h4>Projet personnel front-end</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                doloribus explicabo odio, at labore.
+                Création de plusieurs interfaces responsive pour gagner en
+                autonomie sur HTML/CSS.
               </p>
             </section>
 
             <!-- Colonne 2023 -->
             <section>
               <h3>2023</h3>
-              <h4>Intitulé</h4>
+              <h4>Formation développement web</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                laboriosam dicta maiores.
+                Renforcement des bases en intégration et logique de
+                programmation.
               </p>
-              <h4>Intitulé</h4>
+              <h4>Premiers projets en équipe</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-                deserunt magni aliquam.
+                Collaboration sur des mini-projets avec partage de tâches et
+                revue du code.
               </p>
             </section>
 
             <!-- Colonne 2022 -->
             <section>
               <h3>2022</h3>
-              <h4>Intitulé</h4>
+              <h4>Découverte du développement</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
-                exercitationem tempora.
+                Premiers pas sur le web: structure HTML, styles CSS et
+                compréhension du DOM.
               </p>
             </section>
 
             <!-- Colonne 2021 -->
             <section>
               <h3>2021</h3>
-              <h4>Intitulé</h4>
+              <h4>Exploration du numérique</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
-                suscipit tempore repudiandae.
+                Découverte de l'univers tech et de la création de contenus
+                digitaux.
               </p>
-              <h4>Intitulé</h4>
+              <h4>Objectif pro défini</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
-                quia assumenda!
+                Choix du front-end pour construire des interfaces utiles et
+                accessibles.
               </p>
             </section>
           </div>
@@ -239,16 +253,11 @@
         </a>
 
         <!-- Adresse email de contact -->
-        <a class="mail" href="mailto:mail@gmail.com">mail@gmail.com</a>
+        <a class="mail" href="mailto:ayoub.dev@gmail.com">ayoub.dev@gmail.com</a>
 
         <!-- Liens sociaux -->
         <div class="footer-socials">
-          <a href="#" aria-label="Facebook"
-            ><i class="ph-fill ph-facebook-logo"></i
-          ></a>
-          <a href="#" aria-label="Instagram"
-            ><i class="ph-fill ph-instagram-logo"></i
-          ></a>
+          <a href="#" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
           <a href="#" aria-label="LinkedIn"
             ><i class="ph-fill ph-linkedin-logo"></i
           ></a>
